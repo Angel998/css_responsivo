@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #5b7989;
+    padding: 10px;
+}
+
+#section_img_principal {
+    background-color:  #82c3a6;
+
+}
+
+#section_img_principal img {
+    width: 80%;
+}
+
+#section_img_secundarias {
+    background-color: #d5c75f;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#section_img_secundarias img {
+    width: 42%
+}
