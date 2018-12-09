@@ -1,0 +1,24 @@
+* {
+    font-family: 'Dancing Script', cursive;
+}
+body {
+    background-color:  #02010a;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color: #5b7989;
+    padding: 10px;
+}
+
+img {
+    box-shadow: 2px 2px #02010a;
+}
+
+@media (max-width:600px) { 
+    header {
+        height: 110px;
+    }
+}

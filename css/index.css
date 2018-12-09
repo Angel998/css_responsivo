@@ -1,11 +1,6 @@
-body {
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #5b7989;
-    padding: 10px;
+.img_shadow {
+    border: 2px solid black;
+    box-shadow: 5px 5px #82c3a6;
 }
 
 #section_img_principal {
@@ -21,7 +16,35 @@ header {
     background-color: #d5c75f;
     padding-top: 20px;
     padding-bottom: 20px;
+    border: 1px solid;
 }
 #section_img_secundarias img {
-    width: 42%
+    width: 70%;
+}
+
+#img_paisaje:hover {
+    animation: img_rotacion 2s;
+}
+
+@keyframes img_rotacion {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to  {
+        -webkit-transform: rotate(10deg);
+    }
+}
+
+
+#img_retrato:hover {
+    animation: img_traslacion 2s;
+}
+
+@keyframes img_traslacion {
+    from {
+        -webkit-transform: translate(0,0);
+    }
+    to  {
+        -webkit-transform: translate(20px, -5px);
+    }
 }

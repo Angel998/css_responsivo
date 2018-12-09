@@ -1,0 +1,224 @@
+/* Colores */
+.bg-dark {
+    background-color: black;
+}
+/* Fin De Colores */
+
+/* Texto */
+.subrayado {
+    text-decoration: underline;
+}
+
+.decoration-none {
+    text-decoration: none;
+}
+
+.text-white {
+    color: white !important;
+}
+.text-dark {
+    color: black;
+}
+.text-center {
+    text-align: center;
+}
+.text-title {
+    font-size: 30px;
+}
+/* Fin De Texto */
+
+/* Margenes */
+.mr-5 {
+    margin-right: 5px;
+}
+
+.mr-10 {
+    margin-right: 10px;
+}
+.mr-15 {
+    margin-right: 15px;
+}
+
+.mr-20 {
+    margin-right: 20px;
+}
+
+.mr-25 {
+    margin-right: 25px;
+}
+
+.mr-30 {
+    margin-right: 30px;
+}
+
+.mt-5 {
+    margin-top: 5px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+.mt-15 {
+    margin-top: 15px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-25 {
+    margin-top: 25px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.ml-5 {
+    margin-left: 5px;
+}
+
+.ml-10 {
+    margin-left: 10px;
+}
+.ml-15 {
+    margin-left: 15px;
+}
+
+.ml-20 {
+    margin-left: 20px;
+}
+
+.ml-25 {
+    margin-left: 25px;
+}
+
+.ml-30 {
+    margin-left: 30px;
+}
+
+.mb-5 {
+    margin-bottom: 5px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+.mb-15 {
+    margin-bottom: 15px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-25 {
+    margin-bottom: 25px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.ml-auto {
+    position: absolute;
+    right: 0;
+    margin-left: auto;
+}
+/* Fin De Margenes */
+
+/* Padding */
+.p-10 {
+    padding: 10px;
+}
+.pl-10 {
+    padding-left: 10px;
+}
+
+.pr-10 {
+    padding-right: 10px;
+}
+.pt-10 {
+    padding-top: 10px;
+}
+/* Fin de padding */
+
+/* Posicion */
+.d-inline {
+    display: inline;
+}
+
+/* Fin de Posicion */
+
+.shadow-2 {
+    text-shadow: 2px 2px #02010a;
+}
+
+/* Navbar */
+.navbar-brand {
+    font-size: 30px;
+}
+
+.nav-item {
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.nav-items {
+    font-size: 20px;
+}
+
+.nav-items-whites .nav-item, a:link {
+    color: white !important;
+}
+
+.nav-items-whites .nav-item, a:visited {
+    color: white !important;
+}
+
+/* Fin de Navbar */
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.col {
+    flex: 1;
+    margin-bottom: 10px;
+}
+
+@media (max-width:600px) {
+    .row {
+        flex-wrap:nowrap;
+        flex-direction: column;
+    } 
+    img.col {
+        flex: none;
+        width: 95%;
+    }
+    .navbar-brand {
+        text-align: center;
+    }
+    .nav-items {
+        width: 100%;
+        padding: 0;
+        margin: auto;
+        text-align: center;
+    }
+}
+
+/* Imagenes */
+.img-blur {
+    filter: blur(10px);
+}
+
+.img-gray-scale {
+    filter: grayscale(100%);
+}
+
+.img-sepia {
+    filter: sepia(90%);
+}

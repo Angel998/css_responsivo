@@ -6,200 +6,86 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/helpers.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/global.css">
     <title>Inicio</title>
-
-
-    <style> 
-    /* Texto */
-    .subrayado {
-        text-decoration: underline;
-    }
-
-    .decoration-none {
-        text-decoration: none;
-    }
-
-    .text-white {
-        color: white !important;
-    }
-    .text-center {
-        text-align: center;
-    }
-    /* Fin De Texto */
-
-    /* Margenes */
-    .mr-5 {
-        margin-right: 5px;
-    }
-
-    .mr-10 {
-        margin-right: 10px;
-    }
-    .mr-15 {
-        margin-right: 15px;
-    }
-
-    .mr-20 {
-        margin-right: 20px;
-    }
-
-    .mr-25 {
-        margin-right: 25px;
-    }
-
-    .mr-30 {
-        margin-right: 30px;
-    }
-
-    .mt-5 {
-        margin-top: 5px;
-    }
-
-    .mt-10 {
-        margin-top: 10px;
-    }
-    .mt-15 {
-        margin-top: 15px;
-    }
-
-    .mt-20 {
-        margin-top: 20px;
-    }
-
-    .mt-25 {
-        margin-top: 25px;
-    }
-
-    .mt-30 {
-        margin-top: 30px;
-    }
-
-    .ml-5 {
-        margin-left: 5px;
-    }
-
-    .ml-10 {
-        margin-left: 10px;
-    }
-    .ml-15 {
-        margin-left: 15px;
-    }
-
-    .ml-20 {
-        margin-left: 20px;
-    }
-
-    .ml-25 {
-        margin-left: 25px;
-    }
-
-    .ml-30 {
-        margin-left: 30px;
-    }
-
-    .mb-5 {
-        margin-bottom: 5px;
-    }
-
-    .mb-10 {
-        margin-bottom: 10px;
-    }
-    .mb-15 {
-        margin-bottom: 15px;
-    }
-
-    .mb-20 {
-        margin-bottom: 20px;
-    }
-
-    .mb-25 {
-        margin-bottom: 25px;
-    }
-
-    .mb-30 {
-        margin-bottom: 30px;
-    }
-
-    .ml-auto {
-        position: absolute;
-        right: 0;
-        margin-left: auto;
-    }
-    /* Fin De Margenes */
-
-    /* Posicion */
-    .d-inline {
-        display: inline;
-    }
-
-    /* Fin de Posicion */
-
-    .shadow-2 {
-        text-shadow: 2px 2px #02010a;
-    }
-
-    /* Navbar */
-    .navbar {
-        
-    }
-
-    .navbar-brand {
-        font-size: 30px;
-    }
-
-    .nav-item {
-        margin-left: 2px;
-        margin-right: 2px;
-    }
-
-    .nav-items-whites .nav-item, a:link {
-        color: white !important;
-    }
-
-    .nav-items-whites .nav-item, a:visited {
-        color: white !important;
-    }
-
-    /* Fin de Navbar */
-
-    .container {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    
-    </style>
 </head>
 <body>
     <header>
-        <nav class="navbar">
-            <a class="navbar-brand shadow-2 text-white decoration-none" href="index.html">Comenzando con la fotografia</a>
-            <div class="ml-auto d-inline nav-items-white nav-items mr-10">
-                <a class="nav-item decoration-none" href="index.html">Inicio</a>
-                <a class="nav-item subrayado" href="paisajes.html">Paisajes</a>
-                <a class="nav-item subrayado" href="retratos.html">Retratos</a>
+        <nav class="navbar row">
+            <a class="navbar-brand shadow-2 text-white decoration-none col" href="index.html">Comenzando con la fotografia</a>
+            <div class="col">
+                <div class="ml-auto d-inline nav-items-white nav-items mr-10">
+                    <a class="nav-item decoration-none" href="index.html">Inicio</a>
+                    <a class="nav-item subrayado" href="paisajes.html">Paisajes</a>
+                    <a class="nav-item subrayado" href="retratos.html">Retratos</a>
+                </div>
             </div>
         </nav>
     </header>
 
-    <section class="text-center container" id="section_img_principal">
-        <img src="img/paisaje.jpg" 
-                alt="Imagen de un paisaje"
-                class="mt-20 mb-20"
-                draggable="false">
-    </section>
-    
-    <section id="section_img_secundarias">
-        <img src="img/paisaje.jpg" 
-                alt="Imagen de un paisaje"
-                draggable="false">
-        <img src="img/paisaje.jpg" 
-                alt="Imagen de un paisaje"
-                draggable="false">
-    </section>
-    
+    <div class="container">
+        <section class="text-center" id="section_img_principal">
+            <img src="img/paisaje.jpg" 
+                    alt="Imagen de un paisaje"
+                    class="mt-20 mb-20"
+                    draggable="false">
+        </section>
+        
+        <section id="section_img_secundarias" class="row">
+            <a href="paisajes.html" class="col text-center">
+                <img src="img/paisaje.jpg" 
+                    alt="Imagen de un paisaje"
+                    draggable="false" 
+                    id="img_paisaje"
+                    class="img_shadow">
+            </a>
+            
+            <a href="retratos.html" class="col text-center">
+                <img src="img/retrato.jpg"
+                    alt="Imagen de un retrato"
+                    draggable="false"
+                    id="img_retrato"
+                    class="img_shadow">
+            </a>
+        </section>
+    </div>
 
-    <footer>
+    <footer style="background-color:#C6d5c5;" class="p-10">
+        <div class="row">
+            <div class="col">
+                <div>
+                    <span class="text-title">Contacto</span>
+                    <br>
+                    <strong>Correo:</strong> angel@hotmail.com
+                    <br>
+                    <strong>Direccion:</strong> Comayagua
+                    <br>
+                    <strong>Numero telefonico:</strong> 1827619162
+                </div>
+            </div>
+            <div class="col">
+                <span class="text-title">Redes sociales</span>
+                <div class="social-icons text-dark">
+                    <i class="fab fa-facebook-square fa-2x"></i>
+                    <i class="fab fa-instagram fa-2x"></i>
+                    <i class="fab fa-twitter fa-2x"></i>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <span class="text-title">Terminos</span> <br>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, provident similique. Iusto atque neque ex?
+                </div>
+            </div>
 
+            <div class="col">
+                <span class="text-title">Derechos</span> <br>
+                <span>Angel Hernandez &copy; 2018</span>
+            </div>
+            
+        </div>
     </footer>
 </body>
 </html>
